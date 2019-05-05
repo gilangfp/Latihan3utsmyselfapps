@@ -14,31 +14,34 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-    private ViewPager viewPager;
-    private SlideAdapter myadapter;
+    private ViewPager pager;
     private Button button;
+    private int[] layouts = {R.layout.fragment_first_slide, R.layout.fragment_second_slide, R.layout.fragment_third_fragment};
+    private pagerAdaptor mpagerAdaptor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
-        myadapter = new SlideAdapter(this);
-        viewPager.setAdapter(myadapter);
 
-       button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                verivyAcount();
-            }
-        });
+
+        pager = (ViewPager) findViewById(R.id.viewPager);
+        mpagerAdaptor = new pagerAdaptor(layouts, this);
+        pager.setAdapter(mpagerAdaptor);
+
+
+
+
+
 
     }
-    public void verivyAcount(){
-        Intent i=new Intent(this,bottomnavigation.class);
-        startActivity(i);
+    public void next(View view){
+        Intent in = new Intent(this, Menu.class);
+        startActivity(in);
+
     }
+
+
 
 
 }

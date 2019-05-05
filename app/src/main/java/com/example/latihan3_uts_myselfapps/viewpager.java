@@ -17,11 +17,15 @@ private Button button;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
         myadapter = new SlideAdapter(this);
         viewPager.setAdapter(myadapter);
 
     }
 
 
+    public void next(View view) {
+        Intent in = new Intent(this, Menu.class);
+        startActivity(in);
+    }
 }

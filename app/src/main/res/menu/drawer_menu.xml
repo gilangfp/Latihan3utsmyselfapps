@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <item android:title="Home">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_interest"
+                android:icon="@drawable/ic_interest"
+                android:title="Interest" />
+        </menu>
+    </item>
+    <item android:title="Daily Activity">
+        <menu>
+            <item
+                android:id="@+id/nav_daily_activity"
+                android:icon="@drawable/ic_daily_activity"
+                android:title="Daily Activity" />
+            <item
+                android:id="@+id/nav_friend_list"
+                android:icon="@drawable/ic_friend"
+                android:title="Friends List" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_galeri"
+        android:icon="@drawable/ic_galeri"
+        android:title="Gallery" />
+    <item
+        android:id="@+id/nav_fav"
+        android:icon="@drawable/ic_video"
+        android:title="Favorites" />
+
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profiles"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contacts"
+                android:title="Contact" />
+            <item
+                android:id="@+id/nav_findme"
+                android:icon="@drawable/ic_location"
+                android:title="Find Me" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About Apps" />
+        </menu>
+    </item>
+
+</menu>
